@@ -4,8 +4,10 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import PropTypes from 'prop-types';
 import Input from '../../components/forms/input';
+import type { LoginProps } from './props';
+import type { LoginState } from './state';
 
-export default class Login extends Component {
+export default class Login extends Component<LoginProps, LoginState> {
   constructor() {
     super();
     this.state = {
