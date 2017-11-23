@@ -3,9 +3,9 @@
 import React from 'react';
 import { TextInput } from 'react-native';
 import PropTypes from 'prop-types';
+import type { InputProps } from './type';
 
-
-export default function Input({ onChangeText, placeholder, secure }) {
+export default function Input({ onChangeText, placeholder, secure }: InputProps) {
   return (
     <TextInput
       onChangeText={onChangeText}
