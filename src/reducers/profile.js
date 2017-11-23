@@ -1,6 +1,6 @@
 // @flow
 
-import type Profile from '../types/profile';
+import type { Profile } from '../types/profile';
 
 export default function profile(
   state: Profile = {},
