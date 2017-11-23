@@ -3,7 +3,7 @@
 import React from 'react';
 import { TextInput } from 'react-native';
 import PropTypes from 'prop-types';
-import type { InputProps } from './type';
+import type { InputProps } from './props';
 
 export default function Input({ onChangeText, placeholder, secure }: InputProps) {
   return (
