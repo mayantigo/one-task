@@ -3,7 +3,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { NativeRouter, Route, AndroidBackButton } from 'react-router-native';
-import { store } from './src/reducers';
+import store from './src/reducers';
 import Login from './src/containers/Login';
 
 export default function App() {

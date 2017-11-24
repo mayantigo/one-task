@@ -3,9 +3,10 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import PropTypes from 'prop-types';
-import Input from '../../components/forms/input';
+import { Button, Input } from '../../components/forms';
 import type { LoginProps } from './props';
 import type { LoginState } from './state';
+import styles from './styles';
 
 export default class Login extends Component<LoginProps, LoginState> {
   constructor() {
@@ -22,7 +23,7 @@ export default class Login extends Component<LoginProps, LoginState> {
 
   render() {
     return (
-      <View>
+      <View style={styles.Login}>
         <Text>
           Login
         </Text>
@@ -35,6 +36,7 @@ export default class Login extends Component<LoginProps, LoginState> {
           placeholder="Password"
           secure
         />
+        <Button text="Login" onPress={() => this.login()} />
       </View>
     );
   }

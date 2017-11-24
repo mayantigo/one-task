@@ -12,9 +12,11 @@ export const initialState = {
   },
 };
 
-export default createStore(
+const store = createStore(
   combineReducers({
     profile,
   }),
   initialState,
 );
+
+export default store;
